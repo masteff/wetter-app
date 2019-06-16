@@ -20,7 +20,8 @@ weatherForm.addEventListener('submit', (e) => {
         else{
             messageOne.textContent = data.location
 
-            messageTwo.textContent = `${data.forecast.summary} Es sind ${data.forecast.temperature} Grad mit einer Regenwahrscheinlichkeit von ${data.forecast.precipProbability} %`
+            messageTwo.textContent = `${data.forecast.summary} Es sind ${data.forecast.temperature} Grad mit einer Regenwahrscheinlichkeit von ${data.forecast.precipProbability} %. 
+            Es werden maximal ${data.forecast.tempHigh} Grad und minimal ${data.forecast.tempLow} Grad `
 
         }
     })
